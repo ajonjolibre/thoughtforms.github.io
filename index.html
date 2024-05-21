@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0, max-scale=1">
+    <title>Thoughtforms</title>
+    <style>
+         @media (min-width: 500px){
+        body {
+            background-color: black;
+        }
+
+        .logo
+        {
+          display: flex;
+          justify-content:center;
+          scale: 90%;
+          animation: fade-in 8000ms forwards;
+        }
+
+        @keyframes fade-in {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        } 
+    }
+
+    @media (max-width: 500px){
+        body {
+            background-color: black;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50vh;
+            transform: translate(-50%,-50%);
+        }
+
+        .logo
+        {
+         display: flex;
+         justify-content: center;
+          scale: 100%;
+          animation: fade-in 8000ms forwards;
+          align-items: center;
+          position: relative;
+        }
+
+        @keyframes fade-in {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        } 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="logo"><a href="main.html"><img src="Thoughtform.png" alt="Thoughtforms"></a></div>
+</body>
+</html>
